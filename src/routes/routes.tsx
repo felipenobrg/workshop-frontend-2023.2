@@ -5,9 +5,8 @@ import { Home } from "../pages/home";
 export const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />}>
-        <Route path="/galeria" element={<Galeria />} />
-      </Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/galeria" element={<Galeria />} />
     </Routes>
   );
 };

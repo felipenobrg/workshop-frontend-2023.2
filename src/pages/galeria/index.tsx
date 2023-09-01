@@ -1,5 +1,10 @@
+import { Header } from "../../components/header"
+
 export const Galeria = () => {
     return (
-        <h1>Home</h1>
+        <>
+        <Header />
+        <h1>Galeria</h1>
+        </>
     )
 }
