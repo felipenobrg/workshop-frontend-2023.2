@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import starrySky from '../assets/starrySky.jpeg'
 
 export const GlobalStyle = createGlobalStyle`
  * {
@@ -16,6 +17,8 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme['gray-900']};
     color: ${(props) => props.theme['gray-300']};
     -webkit-font-smoothing: antialiased;
+    background-image: url(${starrySky}); 
+    background-size: cover;
  }
 
  body, input, textarea, button {
