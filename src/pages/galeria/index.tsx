@@ -5,7 +5,7 @@ import { CharacterCards } from "./components/characterCards";
 export const Galeria = () => {
   return (
     <GaleriaContainer>
-      <Header  />
+      <Header />
       <CharacterCards />
     </GaleriaContainer>
   );

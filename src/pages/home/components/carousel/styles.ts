@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 export const CarouselContainer = styled.div`
   z-index: 0;
   overflow: hidden;
-
   position: relative;
 
   img {
@@ -40,6 +39,12 @@ export const KnowMoreContainer = styled.div`
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const KnowMoreButton = styled.div`
@@ -49,13 +54,21 @@ export const KnowMoreButton = styled.div`
 
   margin-top: 2rem;
   cursor: pointer;
+  
   a {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    justify-content: center;
+    text-transform: uppercase;
+    
     padding: 0.8rem;
     border-radius: 9px;
     width: 10rem;
     font-weight: 700;
-    background: ${(props) => props.theme["white"]};
+    background: ${(props) => props.theme["gray-100"]};
     color: ${(props) => props.theme["gray-900"]};
     text-decoration: none;
+    font-size: 1.05rem;
   }
 `;

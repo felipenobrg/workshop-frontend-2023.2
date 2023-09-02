@@ -31,14 +31,15 @@ export const LinkContainer = styled.div`
 
   a {
     text-decoration: none;
-    color: ${(props) => props.theme["gray-300"]};
+    color: ${(props) => props.theme["gray-100"]};
     font-size: 1.1rem;
     text-transform: uppercase;
     background-image: none;
+    font-weight: bold;
 
     &:hover {
       transition: 0.3s ease;
-      color: ${(props) => props.theme["white"]};
+      color: ${(props) => props.theme["gray-500"]};
     }
   }
 `;
