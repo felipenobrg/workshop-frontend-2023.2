@@ -10,8 +10,6 @@ de Software, Unipê.
     <a href="#-layout">Layout</a>
 </p>
 
-## 🔖 Layout
-
 <p align="center">
 <img width="800" src="https://github.com/felipenobrg/workshop-frontend-2023.2/assets/122055576/42faf18b-4a51-40f2-a38b-0eb079fd1a39" />
 </p>
@@ -24,7 +22,7 @@ de Software, Unipê.
    sobre Star Wars e uma seção de 5 curiosidades sobre Star Wars. <strong>Galeria</strong> Apresenta 3 páginas: Pessoas, Planetas e
    Espécie. Cada página mostra cards com informações diferentes, de acordo com a API fornecida.</p
   
-## 🚀 Technologies
+## 🚀 Tecnologias
 
 Projeto desenvolvido utilizando as seguintes técnologias:
 
@@ -35,7 +33,7 @@ Projeto desenvolvido utilizando as seguintes técnologias:
 - Swiper
 - Phosphor Icons
 
-## Layout
+## 🔖 Layout
 
 <p>Desktop: </p>
 
