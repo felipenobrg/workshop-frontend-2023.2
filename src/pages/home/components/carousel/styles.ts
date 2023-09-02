@@ -54,14 +54,14 @@ export const KnowMoreButton = styled.div`
 
   margin-top: 2rem;
   cursor: pointer;
-  
+
   a {
     display: flex;
     align-items: center;
     gap: 0.3rem;
     justify-content: center;
     text-transform: uppercase;
-    
+
     padding: 0.8rem;
     border-radius: 9px;
     width: 10rem;
@@ -70,5 +70,16 @@ export const KnowMoreButton = styled.div`
     color: ${(props) => props.theme["gray-900"]};
     text-decoration: none;
     font-size: 1.05rem;
+
+    &:hover {
+      transition: 0.3s ease;
+      transform: scale(1.1);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    a {
+      padding: 0.4rem;
+    }
   }
 `;
