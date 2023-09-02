@@ -1,19 +1,24 @@
 import { useState, useEffect } from "react";
-import { GaleryContainer, Loading, SearchContainer, Spinner } from "./styles";
+import {
+  GaleryContainer,
+  Loading,
+  SearchContainer,
+  Spinner,
+} from "./styles";
 import { MagnifyingGlass } from "phosphor-react";
+import { Header } from "../../../../../components/header";
+import { SearchBar } from "../components/searchBar";
 
-interface Character {
+interface Planet {
   name: string;
-  mass: string;
-  hair_color: string;
-  skin_color: string;
-  eye_color: string;
-  birth_year: string;
-  gender: string;
+  rotation_period: string;
+  orbital_period: string;
+  climate: string;
+  population: string;
 }
 
-export const CharacterCards = () => {
-  const [galery, setGalery] = useState<Character[]>([]);
+export const Planetas = () => {
+  const [galery, setGalery] = useState<Planet[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedOption, setSelectedOption] = useState("heaviest");
@@ -21,7 +26,7 @@ export const CharacterCards = () => {
   useEffect(() => {
     async function getGalery() {
       try {
-        const response = await fetch("https://swapi.dev/api/people/");
+        const response = await fetch("https://swapi.dev/api/planets/");
         if (!response.ok) {
           throw new Error("Erro em AP");
         }
@@ -39,17 +44,22 @@ export const CharacterCards = () => {
     character.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const sortedCharacters =
-    selectedOption === "heaviest"
-      ? filteredCharacters.sort(
-          (a, b) => parseFloat(b.mass) - parseFloat(a.mass)
-        )
-      : filteredCharacters.sort(
-          (a, b) => parseFloat(a.mass) - parseFloat(b.mass)
-        );
+  const sortedPopulation = [...filteredCharacters].sort((a, b) => {
+    const populationA = parseInt(a.population, 10);
+    const populationB = parseInt(b.population, 10);
+
+    if (selectedOption === "biggest") {
+      return populationB - populationA;
+    } else if (selectedOption === "smallest") {
+      return populationA - populationB;
+    }
+    return 0;
+  });
 
   return (
     <GaleryContainer>
+      <Header />
+      <SearchBar />
       <SearchContainer>
         <div className="search-wrapper">
           <span>
@@ -68,21 +78,21 @@ export const CharacterCards = () => {
             <input
               type="radio"
               name="characterOption"
-              value="heaviest"
-              checked={selectedOption === "heaviest"}
-              onChange={() => setSelectedOption("heaviest")}
+              value="biggest"
+              checked={selectedOption === "biggest"}
+              onChange={() => setSelectedOption("biggest")}
             />
-            Mais Pesados
+            Maiores Populações
           </label>
           <label>
             <input
               type="radio"
               name="characterOption"
-              value="lightest"
-              checked={selectedOption === "lightest"}
-              onChange={() => setSelectedOption("lightest")}
+              value="smallest"
+              checked={selectedOption === "smallest"}
+              onChange={() => setSelectedOption("smallest")}
             />
-            Mais Leves
+            Menores Populações
           </label>
         </div>
       </SearchContainer>
@@ -93,27 +103,23 @@ export const CharacterCards = () => {
       ) : (
         <>
           <div className="cards-container">
-            {sortedCharacters.map((character) => (
-              <div key={character.name} className="cards-content">
-                <h2>{character.name}</h2>
+            {sortedPopulation.map((planet) => (
+              <div key={planet.name} className="cards-content">
+                <h2>Planeta {planet.name}</h2>
                 <div>
                   <p>
-                    Peso: <strong>{character.mass} kg</strong>
+                    Período de rotação <strong>{planet.rotation_period}</strong>
                   </p>
                   <p>
-                    Cor do cabelo: <strong>{character.hair_color}</strong>
+                    Periodo orbitário:{" "}
+                    <strong>{planet.orbital_period}</strong>
                   </p>
                   <p>
-                    Cor da pele: <strong>{character.skin_color}</strong>
+                    Clima: <strong>{planet.climate}</strong>
                   </p>
                   <p>
-                    Cor do olhos: <strong>{character.eye_color}</strong>
-                  </p>
-                  <p>
-                    Ano de Nascimento: <strong>{character.birth_year}</strong>
-                  </p>
-                  <p>
-                    Gênero: <strong>{character.gender}</strong>
+                    Quantidade populacional:{" "}
+                    <strong>{planet.population}</strong>
                   </p>
                 </div>
               </div>

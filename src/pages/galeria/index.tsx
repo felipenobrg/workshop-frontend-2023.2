@@ -1,12 +1,13 @@
 import { Header } from "../../components/header";
+import { Pessoas } from "./components/pages/pessoas";
 import { GaleriaContainer } from "./styles";
-import { CharacterCards } from "./components/characterCards";
+
 
 export const Galeria = () => {
   return (
     <GaleriaContainer>
       <Header />
-      <CharacterCards />
+      <Pessoas />
     </GaleriaContainer>
   );
 };

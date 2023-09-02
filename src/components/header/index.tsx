@@ -8,7 +8,7 @@ export const Header = () => {
       <img src={starWarsLogo} alt="Star Wars Logo" />
       <LinkContainer>
         <Link to={'/'}>Início</Link>
-        <Link to={'/galeria'}>Galeria</Link>
+        <Link to={'galeria/pessoas'}>Galeria</Link>
       </LinkContainer>
     </HeaderContainer>
   );
