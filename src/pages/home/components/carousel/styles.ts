@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const CarouselContainer = styled.div`
   z-index: 0;
   overflow: hidden;
-  margin-top: 8rem;
+
   position: relative;
 
   img {

@@ -4,17 +4,12 @@ export const HeaderContainer = styled.header`
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
-  position: fixed;
-  top: 0px;
-
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: top 0.3s ease, background-color 0.3s ease;
-
   background: ${(props => props.theme["black"])};
-  background-size: cover;
 
   img {
     width: 13%;

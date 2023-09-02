@@ -1,23 +1,43 @@
 import { keyframes, styled } from "styled-components";
 
 export const GaleryContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 3rem 0 2rem 3rem;
+  }
+
+  .cards-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    gap: 1rem;
+    border: 1px solid ${(props => props.theme["gray-500"])};
+    padding: 1rem;
+    width: 80%;
+    border-radius: 6px;
+  }
+`;
+
+export const SearchContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
 
-  margin-top: 8.7rem;
-
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
+  input {
+    padding: 0.4rem;
     border-radius: 8px;
-    margin: 1rem;
-    padding: 2rem;
-    border: 1px solid ${(props => props.theme["gray-700"])};
+    border: 0;
+    margin-left: 1rem;
   }
+
 `
 
 const spinAnimation = keyframes`
@@ -27,7 +47,7 @@ const spinAnimation = keyframes`
 
 export const Spinner = styled.div`
   border: 4px solid rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #007bff; 
+  border-top: 4px solid #007bff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -40,6 +60,5 @@ export const Loading = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(255, 255, 255, 0.7); 
   overflow: hidden;
 `;
