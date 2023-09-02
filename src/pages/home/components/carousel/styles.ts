@@ -3,13 +3,13 @@ import { styled } from "styled-components";
 export const CarouselContainer = styled.div`
   z-index: 0;
   overflow: hidden;
-  margin-top: 2rem;
+  margin-top: 8rem;
   position: relative;
 
   img {
     width: 100%;
     max-width: 100%;
-    height: 80vh;
+    height: 100vh;
     z-index: 0;
   }
 

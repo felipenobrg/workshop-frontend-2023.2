@@ -1,29 +1,25 @@
 import { styled } from "styled-components";
 
-interface BackgroundProps {
-  variant: 'black' | 'transparent'
-}
-
-export const HeaderContainer = styled.header<BackgroundProps>`
+export const HeaderContainer = styled.header`
   width: 100%;
-
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   position: fixed;
   top: 0px;
-  z-index: 1;
+
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: top 0.3s ease, background-color 0.3s ease;
 
-  background: ${props => props.variant === 'black' ? props.theme["black"] : 'transparent'};
+  background: ${(props => props.theme["black"])};
+  background-size: cover;
 
   img {
-    width: 15%;
+    width: 13%;
     background-image: none;
   }
-
 `;
 
 export const LinkContainer = styled.div`

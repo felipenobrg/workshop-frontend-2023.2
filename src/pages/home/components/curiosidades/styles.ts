@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 
+
 export const CuriosidadesContainer = styled.section`
   display: flex;
   flex-direction: column;

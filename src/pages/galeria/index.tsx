@@ -1,10 +1,12 @@
-import { Header } from "../../components/header"
+import { Header } from "../../components/header";
+import { GaleriaContainer } from "./styles";
+import { CharacterCards } from "./components/characterCards";
 
 export const Galeria = () => {
-    return (
-        <>
-        <Header />
-        <h1>Galeria</h1>
-        </>
-    )
-}
+  return (
+    <GaleriaContainer>
+      <Header  />
+      <CharacterCards />
+    </GaleriaContainer>
+  );
+};
