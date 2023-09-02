@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   transition: top 0.3s ease, background-color 0.3s ease;
-  background: ${(props => props.theme["black"])};
+  background: ${(props) => props.theme["black"]};
 
   img {
     width: 13%;
@@ -42,4 +42,10 @@ export const LinkContainer = styled.div`
       color: ${(props) => props.theme["gray-300"]};
     }
   }
+
+    @media screen and (max-width: 768px) {
+      a {
+        font-size: 0.95rem;
+      }
+    }
 `;
