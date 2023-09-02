@@ -14,6 +14,7 @@ export const CuriosidadesContainer = styled.section`
     text-transform: uppercase;
     color: ${(props => props.theme.white)};
     font-size: 2rem;
+    width: 80%;
   }
 
   img {
