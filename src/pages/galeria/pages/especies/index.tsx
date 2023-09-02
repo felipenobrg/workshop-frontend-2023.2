@@ -64,7 +64,7 @@ export const Especies = () => {
           <div className="cards-container">
             {filteredCharacters.map((species) => (
               <div key={species.name} className="cards-content">
-                <h2>Espécies: {species.name}</h2>
+                <h2>Espécie {species.name}</h2>
                 <div>
                   <p>
                     Classificação: <strong>{species.classification}</strong>
