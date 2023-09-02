@@ -4,12 +4,17 @@ import curiosidadeImage2 from "../../../../assets/curosidade-images/curiosidades
 import curiosidadeImage3 from "../../../../assets/curosidade-images/curiosidades-sobre-star-wars-03.png";
 import curiosidadeImage4 from "../../../../assets/curosidade-images/curiosidades-sobre-star-wars-04.png";
 import curiosidadeImage5 from "../../../../assets/curosidade-images/curiosidades-sobre-star-wars-05.png";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export const Curiosidades = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <CuriosidadesContainer id="curiosidades">
-      <h1>5 Curiosidades sobre Star Wars</h1>
-      <div className="curiosidade">
+      <h1 data-aos="fade-right">5 Curiosidades sobre Star Wars</h1>
+      <div className="curiosidade" data-aos="fade-right">
         <h2>
           1. A respiração de Darth Vader foi feita com um respirador de mergulho
         </h2>
@@ -19,7 +24,7 @@ export const Curiosidades = () => {
           colocando um pequeno microfone no bocal de um respirador de mergulho e
           gravou o som de sua própria respiração.
         </p>
-        <img src={curiosidadeImage1} alt="Curiosidade 1" />
+        <img src={curiosidadeImage1} alt="Curiosidade 1" data-aos="fade-right" />
       </div>
       <div className="curiosidade">
         <h2>2. A língua dos Ewoks não veio "do nada"</h2>
