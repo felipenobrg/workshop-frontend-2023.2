@@ -10,16 +10,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { ArrowCircleDown } from "phosphor-react";
-import AOS from "aos";
-import { useEffect } from "react";
 
 export function Carousel() {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  });
   return (
     <>
-      <CarouselContainer data-aos="fade-right">
+      <CarouselContainer>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={40}
