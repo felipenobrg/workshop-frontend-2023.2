@@ -3,6 +3,19 @@ import { keyframes, styled } from "styled-components";
 export const GaleryContainer = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  span {
+    position: absolute;
+    left: 22px;
+    color: #888;
+  }
 
   .cards-container {
     display: grid;
@@ -43,6 +56,7 @@ export const SearchContainer = styled.div`
     border-radius: 8px;
     border: 0;
     margin-left: 1rem;
+    padding-left: 2rem;
   }
   @media screen and (max-width: 768px) {
     display: flex;

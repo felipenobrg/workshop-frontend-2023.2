@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { GaleryContainer, Loading, SearchContainer, Spinner } from "./styles";
+import { MagnifyingGlass } from "phosphor-react";
 
 interface Character {
   name: string;
@@ -50,12 +51,18 @@ export const CharacterCards = () => {
   return (
     <GaleryContainer>
       <SearchContainer>
-        <input
-          type="text"
-          placeholder="Pesquise pelo nome"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+        <div className="search-wrapper">
+          <span>
+            <MagnifyingGlass size={20} />
+          </span>
+          <input
+            type="text"
+            placeholder="Pesquise pelo nome"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+
         <div>
           <label>
             <input
