@@ -33,4 +33,16 @@ export const CuriosidadesContainer = styled.section`
       margin: 2rem 0 2rem 0;
     }
   }
+
+  @media screen and (max-width: 768px) {
+   h1 {
+    font-size: 1.3rem;
+    text-align: center;
+   }
+
+   h2 {
+    font-size: 1rem;
+    text-align: center;
+   }
+  }
 `;

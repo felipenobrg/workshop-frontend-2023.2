@@ -18,10 +18,17 @@ export const GaleryContainer = styled.div`
 
     text-align: center;
     gap: 1rem;
-    border: 1px solid ${(props => props.theme["gray-500"])};
+    border: 1px solid ${(props) => props.theme["gray-500"]};
     padding: 1rem;
     width: 80%;
     border-radius: 6px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
   }
 `;
 
@@ -37,8 +44,11 @@ export const SearchContainer = styled.div`
     border: 0;
     margin-left: 1rem;
   }
-
-`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
 
 const spinAnimation = keyframes`
   0% { transform: rotate(0deg); }

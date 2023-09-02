@@ -15,6 +15,13 @@ export const HeaderContainer = styled.header`
     width: 13%;
     background-image: none;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem;
+    img {
+      width: 24%;
+    }
+  }
 `;
 
 export const LinkContainer = styled.div`
