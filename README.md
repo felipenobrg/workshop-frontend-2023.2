@@ -16,11 +16,11 @@ de Software, Unipê.
 
 ## :fire: Features
 
-<p>- Responsividade: Projeto 100% responsivo, adaptável para todos os dispositivos.</p>
+<p>• Responsividade: Projeto 100% responsivo, adaptável para todos os dispositivos.</p>
   
-<p>- Apresenta duas páginas principais: Home e Galeria. <strong>Home</strong> possui um carrosel com imagens
-   sobre Star Wars e uma seção de 5 curiosidades sobre Star Wars. <strong>Galeria</strong> Apresenta 3 páginas: Pessoas, Planetas e
-   Espécie. Cada página mostra cards com informações diferentes, de acordo com a API fornecida.</p
+<p>• Apresenta duas páginas principais: Home e Galeria. <strong>Home</strong> possui um carrosel com imagens
+   sobre Star Wars e uma seção de 5 curiosidades sobre Star Wars. <strong>Galeria</strong> apresenta 3 páginas: Pessoas, Planetas e
+   Espécie. Cada página mostra cards com informações diferentes, de acordo dos dados da API fornecida.</p>
   
 ## 🚀 Tecnologias
 
