@@ -1,6 +1,6 @@
 import { MagnifyingGlass, Spinner } from "phosphor-react";
 import { useState, useEffect } from "react";
-import { Header } from "../../../../../components/header";
+import { Header } from "../../../../components/header";
 import { GaleryContainer, Loading, SearchContainer } from "./styles";
 import { SearchBar } from "../components/searchBar";
 

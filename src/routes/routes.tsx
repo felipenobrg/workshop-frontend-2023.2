@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import { Galeria } from "../pages/galeria";
 import { Home } from "../pages/home";
-import { Planetas } from "../pages/galeria/components/pages/planetas";
-import { Especies } from "../pages/galeria/components/pages/especies";
+import { Planetas } from "../pages/galeria/pages/planetas";
+import { Especies } from "../pages/galeria/pages/especies";
 
 export const Router = () => {
   return (

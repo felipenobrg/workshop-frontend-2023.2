@@ -6,7 +6,7 @@ import {
   Spinner,
 } from "./styles";
 import { MagnifyingGlass } from "phosphor-react";
-import { Header } from "../../../../../components/header";
+import { Header } from "../../../../components/header";
 import { SearchBar } from "../components/searchBar";
 
 interface Planet {

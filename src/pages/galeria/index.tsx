@@ -1,5 +1,5 @@
 import { Header } from "../../components/header";
-import { Pessoas } from "./components/pages/pessoas";
+import { Pessoas } from "../../pages/galeria/pages/pessoas";
 import { GaleriaContainer } from "./styles";
 
 
