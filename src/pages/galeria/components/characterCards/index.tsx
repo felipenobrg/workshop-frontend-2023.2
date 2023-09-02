@@ -100,7 +100,7 @@ export const CharacterCards = () => {
                     Cor da pele: <strong>{character.skin_color}</strong>
                   </p>
                   <p>
-                    Cor do olho: <strong>{character.eye_color}</strong>
+                    Cor do olhos: <strong>{character.eye_color}</strong>
                   </p>
                   <p>
                     Ano de Nascimento: <strong>{character.birth_year}</strong>

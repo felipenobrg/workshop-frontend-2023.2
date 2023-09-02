@@ -16,7 +16,8 @@ export const CuriosidadesContainer = styled.section`
   }
 
   img {
-    width: 80%;
+    object-fit: cover;
+    max-width: 80%;
   }
 
   .curiosidade {

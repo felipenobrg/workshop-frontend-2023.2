@@ -39,7 +39,7 @@ export const LinkContainer = styled.div`
 
     &:hover {
       transition: 0.3s ease;
-      color: ${(props) => props.theme["gray-500"]};
+      color: ${(props) => props.theme["gray-300"]};
     }
   }
 `;

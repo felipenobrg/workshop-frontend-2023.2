@@ -36,10 +36,10 @@ export function Carousel() {
             <img src={CarouselImage1} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={CarouselImage2} alt="" />
+            <img src={CarouselImage3} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={CarouselImage3} alt="" />
+            <img src={CarouselImage2} alt="" />
           </SwiperSlide>
         </Swiper>
       </CarouselContainer>
