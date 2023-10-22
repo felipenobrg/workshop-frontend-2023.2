@@ -1,30 +1,24 @@
 <h1 align="center">Star Wars</h1>
-<p align="center">Projeto desenvolvido como desafio Front End para a Fábrica
-de Software, Unipê.
-</p>
+<p align="center">Project developed as a Front-End challenge for the Software Factory, Unipê.</p>
 
 <p align="center">
-  <a href="#-project">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-features"> Features </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-technologies"> Tecnologias </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="#-layout">Layout</a>
-</p>
-
-<p align="center">
-<img width="800" src="https://github.com/felipenobrg/workshop-frontend-2023.2/assets/122055576/42faf18b-4a51-40f2-a38b-0eb079fd1a39" />
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>
 </p>
 
 ## :fire: Features
 
-<p>• Responsividade: Projeto 100% responsivo, adaptável para todos os dispositivos.</p>
-  
-<p>• Apresenta duas páginas principais: Home e Galeria. <strong>Home</strong> possui um carrosel com imagens
-   sobre Star Wars e uma seção de 5 curiosidades sobre Star Wars. <strong>Galeria</strong> apresenta 3 páginas: Pessoas, Planetas e
-   Espécie. Cada página mostra cards com informações diferentes, de acordo dos dados da API fornecida.</p>
-  
-## 🚀 Tecnologias
+<p>• Responsiveness: 100% responsive project, adaptable to all devices.</p>
 
-Projeto desenvolvido utilizando as seguintes técnologias:
+<p>• Features two main pages: Home and Gallery. <strong>Home</strong> has a carousel with images
+   related to Star Wars and a section with 5 interesting facts about Star Wars. <strong>Gallery</strong> consists of 3 pages: People, Planets, and
+   Species. Each page displays cards with different information based on the data from the provided API.</p>
+
+## 🚀 Technologies
+
+Project developed using the following technologies:
 
 - ReactJS
 - TypeScript
@@ -35,14 +29,14 @@ Projeto desenvolvido utilizando as seguintes técnologias:
 
 ## 🔖 Layout
 
-<p>Desktop: </p>
+<p>Desktop:</p>
 
 <p align="center">
 <img src="https://github.com/felipenobrg/workshop-frontend-2023.2/assets/122055576/089d5b37-eb61-4360-a11f-731e1e59489c" />
 </p>
 <br />
 
-<p>Mobile: </p>
+<p>Mobile:</p>
 
 <p align="center">
  <img src="https://github.com/felipenobrg/workshop-frontend-2023.2/assets/122055576/7908f16c-8bc1-4b37-ba13-0ddbd84b1210"/>
@@ -50,4 +44,4 @@ Projeto desenvolvido utilizando as seguintes técnologias:
 
 ---
 
-[Link do Projeto](https://workshop-frontend-2023-2.vercel.app/)
+[Project Link](https://workshop-frontend-2023-2.vercel.app/)
